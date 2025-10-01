@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primus</title>
+    <style>
+        @keyframes iridescent {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            background: linear-gradient(-45deg, #000000, #800000, #ff0000, #800000, #000000);
+            background-size: 400% 400%;
+            animation: iridescent 10s ease infinite;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+        }
+        h1 {
+            color: white;
+            font-size: 48px;
+            margin-top: 150px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: white;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    </style>
+    <style>
+        @media (max-width: 768px) {
+            img {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            button {
+                font-size: 18px !important;
+                padding: 15px 30px !important;
+            }
+            h1 {
+                font-size: 36px !important;
+            }
+            p {
+                font-size: 18px !important;
+            }
+        }
+        @media (max-width: 480px) {
+            img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+            button {
+                font-size: 16px !important;
+                padding: 10px 20px !important;
+            }
+            h1 {
+                font-size: 28px !important;
+            }
+            p {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="gerb_south.png" alt="Gerb South" style="position: fixed; top: 20px; left: 20px; width: 150px; height: 150px;">
+    <img src="gerb_east.png" alt="Gerb East" style="position: fixed; bottom: 20px; left: 20px; width: 150px; height: 150px;">
+    <img src="gerb_north.png" alt="Gerb North" style="position: fixed; top: 20px; right: 20px; width: 150px; height: 150px;">
+    <img src="gerb_west.png" alt="Gerb West" style="position: fixed; bottom: 20px; right: 20px; width: 150px; height: 150px;">
+    <div style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%);">
+        <button style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; padding: 20px 40px; margin-right: 20px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">About Primus</button>
+        <button style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; padding: 20px 40px; font-size: 24px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Our Gymnasium</button>
+        <br>
+        <button style="background: #ff0000; color: white; border: none; border-radius: 10px; padding: 20px 40px; width: 100%; font-size: 24px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); margin-top: 10px;">Register</button>
+    </div>
+    <h1>Welcome to Primus!</h1>
+    <p>Connect with friends, share your thoughts, and discover new communities.</p>
+    <p>Join us today and start your social journey.</p>
+</body>
+</html>
