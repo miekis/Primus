@@ -1,0 +1,60 @@
+@keyframes iridescent {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body {
+    background: linear-gradient(-45deg, #000000, #800000, #ff0000, #800000, #000000);
+    background-size: 400% 400%;
+    animation: iridescent 10s ease infinite;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+}
+h1 {
+    color: white;
+    font-size: 48px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+p {
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 768px) {
+    img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    button {
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    h1 {
+        font-size: 36px !important;
+    }
+    p {
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 480px) {
+    img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    button {
+        font-size: 16px !important;
+        padding: 10px 20px !important;
+    }
+    h1 {
+        font-size: 28px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+}
